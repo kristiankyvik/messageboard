@@ -1,0 +1,17 @@
+.btn-block+.btn-block, .btn-block, .primary{
+	display:in-line;
+	width: 145px;
+	float:left;
+margin-bottom: 0px;
+margin-top: 0px;
+margin-left: 0px;
+}
+
+.btn-block+.btn-block, .btn-block, .secondary{
+	display:in-line;
+	width: 145px;
+	margin-right: 5px;
+
+	
+
+}
