@@ -1,0 +1,69 @@
+
+<section id="main-content">
+  <section class="wrapper">
+
+    <div class="container">
+
+      <form id="question_submission_form" class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please enter your question and click on Submit</h2>
+        <input id="question" form="question_submission_form" class="form-control" placeholder="Enter your question here..." required autofocus>
+	     </input>
+       <div class="buttons">
+        <button id="submitButton" class="btn btn-lg btn-primary btn-block primary" >Submit</button>
+	<a class="btn btn-lg btn-primary btn-block secondary" href="home.html">Cancel</a>
+       </div>
+      </form>
+
+    </div> <!-- /container -->
+    <% if @list != [] && @list != nil %>
+      <% @list.each do |message| %>
+        <div class="row" >
+          <%= message.content %> -  <%= message.ranking %> <button id= <%= message.id %> class="btn btn-primary btn-block voteButton" style="display: inline;"> voteUP! </button>
+        </div>
+      <% end %>
+    <% end %>
+</section>
+  
+</section>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  <script type="text/javascript">
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+    $("#submitButton").click(function(){
+      var text = $('#question')[0].value
+      var data = {question: text};
+      $.ajax({
+              url: "/clients/getQuestion",
+              type: "post",
+              data: data,
+              dataType: "json"
+
+            });
+ });
+
+    //    $(".voteButton").click(function(evt){
+    //     target_id = evt.target.id;
+    //     console.log(target_id);
+    //     var data = {target_id: target_id};
+    //     $.ajax({
+    //              url: "/clients/voteQuestion",
+    //              type: "post",
+    //              data: data,
+    //              dataType: "json"
+
+    //            });
+    // });
+  </script>
+
+<% content_for :head do %>
+  <style type="text/css">
+    <%= render :partial => "shared/style_questions" %>
+  </style>
+<% end %>
+
+

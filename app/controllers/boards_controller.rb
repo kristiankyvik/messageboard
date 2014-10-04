@@ -16,6 +16,10 @@ class BoardsController < ApplicationController
     redirect_to( action: 'index', controller: 'boards', user_id: params[:user_id])
   end
 
+  def gotUpdate
+    
+  end
+
   # def show
   # end
 

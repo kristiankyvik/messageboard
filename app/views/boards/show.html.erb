@@ -1,3 +1,4 @@
+<script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
 <section id="main-content">
   <section class="wrapper">
   <canvas id= "myCanvas" width="600" height="400"></canvas>
@@ -1126,4 +1127,22 @@
   console.log("sdffds");
   var list = [['fsddsdseer resdsdsdsds', 2], ['bar', 1]];
   WordCloud(document.getElementById('myCanvas'), { list: list, gridSize: 16, weightFactor: 16, shuffle: false} );
+</script>
+
+
+<script type="text/javascript">
+  // Enable pusher logging - don't include this in production
+  Pusher.log = function(message) {
+    if (window.console && window.console.log) {
+      window.console.log(message);
+    }
+  };
+
+  var pusher = new Pusher('552cc50436c157cf8d4c');
+  var channel = pusher.subscribe('the_channel');
+  channel.bind('new_question', function(data) {
+    alert("new wustion!!!");
+    WordCloud(document.getElementById('myCanvas'), { list: data.message, gridSize: 16, weightFactor: 16, shuffle: false} );
+  });
+
 </script>
