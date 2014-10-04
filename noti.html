@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            var Notify = require('notify');
+
+            var myNotification = new Notify('Yo dawg!', {
+                body: 'You have a new slidedeck message',
+                notifyShow: onNotifyShow
+            });
+
+            function onNotifyShow() {
+                console.log('notification was shown.');
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="myNotification.show();">
+    </body>
+</html>
