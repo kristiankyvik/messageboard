@@ -31,12 +31,13 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
+      <form id="question_submission_form" class="form-signin" role="form">
         <h2 class="form-signin-heading">Please enter your question and click on Submit</h2>
-        <input type="text" class="form-control" placeholder="Enter your question here..." required autofocus>
+        <textarea form="question_submission_form" class="form-control" placeholder="Enter your question here..." required autofocus>
+	</textarea>
        <div class="buttons">
         <button class="btn btn-lg btn-primary btn-block primary" type="submit">Submit</button>
-	<button class="btn btn-lg btn-primary btn-block secondary" t>Cancel</button>
+	<a class="btn btn-lg btn-primary btn-block secondary" href="home.html">Cancel</a>
        </div>
       </form>
 
