@@ -2426,6 +2426,7 @@
     MAIN SIDEBAR MENU
     *********************************************************************************************************************************************************** -->
     <!--sidebar start-->
+    <% if user_signed_in? %>
     <aside>
         <div id="sidebar"  class="nav-collapse ">
             <!-- sidebar menu start-->
@@ -2510,7 +2511,8 @@
         </div>
     </aside>
     <!--sidebar end-->
-
+  <% else %>
+  <% end %>
   <p class="navbar-text pull-right">
   <% if user_signed_in? %>
     Logged in as <strong><%= current_user.email %></strong>.
@@ -2529,6 +2531,7 @@
   <% end %>
 
 <%= yield %>
+<%= yield :head %>
 
 </body>
 </html>
