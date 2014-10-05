@@ -1,5 +1,6 @@
 class BoardsController < ApplicationController
   layout 'application', :except => [:show]
+  
   def index
     user = User.find(params[:user_id])
     @boards = user.boards

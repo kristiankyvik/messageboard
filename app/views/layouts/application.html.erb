@@ -60,9 +60,9 @@
                 <h5 class="centered">Marcel Newman</h5>
                   
                 <li class="mt">
-                    <a class="active" href="index.html">
+                    <a class="active">
                         <i class="fa fa-dashboard"></i>
-                        <span>Index of Boards</span>
+                        <span><%= link_to "Index of Boards", user_boards_path, method: :index, :class => 'navbar-link'  %></span>
                     </a>
                 </li>
 
