@@ -1,4 +1,5 @@
 class BoardsController < ApplicationController
+  layout 'application', :except => [:show]
   
   def index
     user = User.find(params[:user_id])
@@ -14,6 +15,13 @@ class BoardsController < ApplicationController
     board = user.boards.new(board_params)
     board.save
     redirect_to( action: 'index', controller: 'boards', user_id: params[:user_id])
+  end
+  def show
+    render :show, :layout => false
+  end
+
+  def gotUpdate
+    
   end
 
   # def show

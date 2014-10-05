@@ -1,0 +1,2678 @@
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+/* BASIC THEME CONFIGURATION */
+/* line 4, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+body {
+  color: #797979;
+  background: #f2f2f2;
+  font-family: 'Ruda', sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 13px;
+}
+
+/* line 13, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 17, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+a, a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 21, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+::selection {
+  background: #68dff0;
+  color: #fff;
+}
+
+/* line 26, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+::-moz-selection {
+  background: #68dff0;
+  color: #fff;
+}
+
+/* line 31, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bootstrap Modifications */
+/* line 37, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.modal-header {
+  background: #68dff0;
+}
+
+/* line 41, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.modal-title {
+  color: white;
+}
+
+/* line 45, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-round {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+/* line 50, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.accordion-heading .accordion-toggle {
+  display: block;
+  cursor: pointer;
+  border-top: 1px solid #F5F5F5;
+  padding: 5px 0px;
+  line-height: 28.75px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  outline: none !important;
+  text-decoration: none;
+}
+
+/*Theme Backgrounds*/
+/* line 67, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.bg-theme {
+  background-color: #68dff0;
+}
+
+/* line 71, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.bg-theme02 {
+  background-color: #ac92ec;
+}
+
+/* line 75, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.bg-theme03 {
+  background-color: #48cfad;
+}
+
+/* line 79, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.bg-theme04 {
+  background-color: #ed5565;
+}
+
+/*Theme Buttons*/
+/* line 84, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme {
+  color: #fff;
+  background-color: #68dff0;
+  border-color: #48bcb4;
+}
+
+/* line 93, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+  color: #fff;
+  background-color: #48bcb4;
+  border-color: #48bcb4;
+}
+
+/* line 99, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme02 {
+  color: #fff;
+  background-color: #ac92ec;
+  border-color: #967adc;
+}
+
+/* line 108, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme02:hover,
+.btn-theme02:focus,
+.btn-theme02:active,
+.btn-theme02.active,
+.open .dropdown-toggle.btn-theme02 {
+  color: #fff;
+  background-color: #967adc;
+  border-color: #967adc;
+}
+
+/* line 114, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme03 {
+  color: #fff;
+  background-color: #48cfad;
+  border-color: #37bc9b;
+}
+
+/* line 123, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme03:hover,
+.btn-theme03:focus,
+.btn-theme03:active,
+.btn-theme03.active,
+.open .dropdown-toggle.btn-theme03 {
+  color: #fff;
+  background-color: #37bc9b;
+  border-color: #37bc9b;
+}
+
+/* line 129, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme04 {
+  color: #fff;
+  background-color: #ed5565;
+  border-color: #da4453;
+}
+
+/* line 138, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-theme04:hover,
+.btn-theme04:focus,
+.btn-theme04:active,
+.btn-theme04.active,
+.open .dropdown-toggle.btn-theme04 {
+  color: #fff;
+  background-color: #da4453;
+  border-color: #da4453;
+}
+
+/* line 144, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-clear-g {
+  color: #48bcb4;
+  background: transparent;
+  border-color: #48bcb4;
+}
+
+/* line 150, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-clear-g:hover {
+  color: white;
+}
+
+/* line 154, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #797979;
+}
+
+/*Helpers*/
+/* line 165, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.centered {
+  text-align: center;
+}
+
+/* line 169, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.goleft {
+  text-align: left;
+}
+
+/* line 173, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.goright {
+  text-align: right;
+}
+
+/* line 177, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.mt {
+  margin-top: 25px;
+}
+
+/* line 181, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.mb {
+  margin-bottom: 25px;
+}
+
+/* line 185, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ml {
+  margin-left: 5px;
+}
+
+/* line 189, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 193, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/*Exclusive Theme Colors Configuration*/
+/* line 199, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.label-theme {
+  background-color: #68dff0;
+}
+
+/* line 203, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.bg-theme {
+  background-color: #68dff0;
+}
+
+/* line 207, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.top-menu > li > .logout {
+  color: #f2f2f2;
+  font-size: 12px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #64c3c2 !important;
+  padding: 5px 15px;
+  margin-right: 15px;
+  background: #68dff0;
+  margin-top: 15px;
+}
+
+/*sidebar navigation*/
+/* line 222, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar {
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  background: #424a5d;
+}
+
+/* line 229, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar h5 {
+  color: #f2f2f2;
+  font-weight: 700;
+}
+
+/* line 234, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar ul li {
+  position: relative;
+}
+
+/* line 238, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar .sub-menu > .sub li {
+  padding-left: 32px;
+}
+
+/* line 242, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar .sub-menu > .sub li:last-child {
+  padding-bottom: 10px;
+}
+
+/*LEFT NAVIGATION ICON*/
+/* line 247, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dcjq-icon {
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  background: url("../img/nav-expand.png") no-repeat top;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+/* line 259, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.active .dcjq-icon {
+  background: url("../img/nav-expand.png") no-repeat bottom;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/*---*/
+/* line 267, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.nav-collapse.collapse {
+  display: inline;
+}
+
+/* line 271, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu, ul.sidebar-menu li ul.sub {
+  margin: -2px 0 0;
+  padding: 0;
+}
+
+/* line 276, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu {
+  margin-top: 75px;
+}
+
+/* line 280, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar > ul > li > ul.sub {
+  display: none;
+}
+
+/* line 284, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sidebar > ul > li.active > ul.sub, #sidebar > ul > li > ul.sub > li > a {
+  display: block;
+}
+
+/* line 288, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li ul.sub li {
+  background: #424a5d;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 295, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li ul.sub li:last-child {
+  border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+}
+
+/* line 300, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li ul.sub li a {
+  font-size: 12px;
+  padding: 6px 0;
+  line-height: 35px;
+  height: 35px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #aeb2b7;
+}
+
+/* line 313, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li ul.sub li a:hover {
+  color: white;
+  background: transparent;
+}
+
+/* line 318, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li ul.sub li.active a {
+  color: #68dff0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* line 328, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li {
+  /*line-height: 20px !important;*/
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 335, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li.sub-menu {
+  line-height: 15px;
+}
+
+/* line 339, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li a span {
+  display: inline-block;
+}
+
+/* line 343, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li a {
+  color: #aeb2b7;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0 15px 10px;
+  font-size: 12px;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 357, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+  background: #68dff0;
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 370, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li a i {
+  font-size: 15px;
+  padding-right: 6px;
+}
+
+/* line 375, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+  color: #fff;
+}
+
+/* line 379, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.sidebar-menu li a.active i {
+  color: #fff;
+}
+
+/* line 384, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.mail-info, .mail-info:hover {
+  margin: -3px 6px 0 0;
+  font-size: 11px;
+}
+
+/* MAIN CONTENT CONFIGURATION */
+/* line 390, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#main-content {
+  margin-left: 210px;
+}
+
+/* line 394, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.header, .footer {
+  min-height: 60px;
+  padding: 0 15px;
+}
+
+/* line 399, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+}
+
+/* line 406, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.black-bg {
+  background: #ffd777;
+  border-bottom: 1px solid #c9aa5f;
+}
+
+/* line 411, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.wrapper {
+  display: inline-block;
+  margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  width: 100%;
+}
+
+/* line 421, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+a.logo {
+  font-size: 20px;
+  color: #ffffff;
+  float: left;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* line 429, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+a.logo b {
+  font-weight: 900;
+}
+
+/* line 433, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+a.logo:hover, a.logo:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 438, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+a.logo span {
+  color: #68dff0;
+}
+
+/*notification*/
+/* line 444, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#top_menu .nav > li, ul.top-menu > li {
+  float: left;
+}
+
+/* line 448, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.notify-row {
+  float: left;
+  margin-top: 15px;
+  margin-left: 92px;
+}
+
+/* line 454, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.notify-row .notification span.label {
+  display: inline-block;
+  height: 18px;
+  width: 20px;
+  padding: 5px;
+}
+
+/* line 461, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.top-menu > li > a {
+  color: #666666;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #666666 !important;
+  padding: 2px 6px;
+  margin-right: 15px;
+}
+
+/* line 471, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
+  border: 1px solid #b6b6b6 !important;
+  background-color: transparent !important;
+  border-color: #b6b6b6 !important;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: #b6b6b6 !important;
+}
+
+/* line 481, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.notify-row .badge {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 100;
+}
+
+/* line 488, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended {
+  max-width: 300px !important;
+  min-width: 160px !important;
+  top: 42px;
+  width: 235px !important;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
+  border: none !important;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Safari and Chrome */
+  /* line 502, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+  .dropdown-menu.extended {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important;
+  }
+}
+/* line 507, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended li p {
+  background-color: #F1F2F7;
+  color: #666666;
+  margin: 0;
+  padding: 10px;
+  border-radius: 4px 4px 0px 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+}
+
+/* line 516, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended li p.green {
+  background-color: #68dff0;
+  color: #fff;
+}
+
+/* line 521, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended li p.yellow {
+  background-color: #fcb322;
+  color: #fff;
+}
+
+/* line 526, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended li a {
+  border-bottom: 1px solid #EBEBEB !important;
+  font-size: 12px;
+  list-style: none;
+}
+
+/* line 532, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended li a {
+  padding: 15px 10px !important;
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 538, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended li a:hover {
+  background-color: #F7F8F9 !important;
+  color: #2E2E2E;
+}
+
+/* line 543, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.tasks-bar .task-info .desc {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* line 548, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.tasks-bar .task-info .percent {
+  display: inline-block;
+  float: right;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 10px;
+  margin-top: -4px;
+}
+
+/* line 557, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended .progress {
+  margin-bottom: 0 !important;
+  height: 10px;
+}
+
+/* line 562, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.inbox li a .photo img {
+  border-radius: 2px 2px 2px 2px;
+  float: left;
+  height: 40px;
+  margin-right: 4px;
+  width: 40px;
+}
+
+/* line 570, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.inbox li a .subject {
+  display: block;
+}
+
+/* line 574, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.inbox li a .subject .from {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* line 579, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.inbox li a .subject .time {
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  right: 5px;
+}
+
+/* line 587, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.inbox li a .message {
+  display: block !important;
+  font-size: 11px;
+}
+
+/* line 592, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav {
+  margin-top: 7px;
+}
+
+/* line 596, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav ul.top-menu > li .dropdown-menu.logout {
+  width: 268px !important;
+}
+
+/* line 601, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav li.dropdown .dropdown-menu {
+  float: right;
+  right: 0;
+  left: auto;
+}
+
+/* line 607, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li {
+  float: left;
+  text-align: center;
+  width: 33.3%;
+}
+
+/* line 613, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li:last-child {
+  float: left;
+  text-align: center;
+  width: 100%;
+  background: #a9d96c;
+  border-radius: 0 0 3px 3px;
+}
+
+/* line 621, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li:last-child > a, .dropdown-menu.extended.logout > li:last-child > a:hover {
+  color: #fff;
+  border-bottom: none !important;
+  text-transform: uppercase;
+}
+
+/* line 627, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li:last-child > a:hover > i {
+  color: #fff;
+}
+
+/* line 631, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li > a {
+  color: #a4abbb;
+  border-bottom: none !important;
+}
+
+/* line 636, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.full-width .dropdown-menu.extended.logout > li > a:hover {
+  background: none !important;
+  color: #50c8ea !important;
+}
+
+/* line 641, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li > a:hover {
+  background: none !important;
+}
+
+/* line 645, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li > a:hover i {
+  color: #50c8ea;
+}
+
+/* line 649, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li > a i {
+  font-size: 17px;
+}
+
+/* line 653, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.dropdown-menu.extended.logout > li > a > i {
+  display: block;
+}
+
+/* line 657, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav ul.top-menu > li > a {
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 6px;
+  background: none;
+  margin-right: 0;
+}
+
+/* line 665, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav ul.top-menu > li {
+  margin-left: 10px;
+}
+
+/* line 669, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav ul.top-menu > li > a:hover, .top-nav ul.top-menu > li > a:focus {
+  border: 1px solid #F1F2F7;
+  background: #F1F2F7;
+}
+
+/* line 675, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav .dropdown-menu.extended.logout {
+  top: 50px;
+}
+
+/* line 679, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav .nav .caret {
+  border-bottom-color: #A4AABA;
+  border-top-color: #A4AABA;
+}
+
+/* line 683, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.top-nav ul.top-menu > li > a:hover .caret {
+  border-bottom-color: #000;
+  border-top-color: #000;
+}
+
+/* line 688, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.log-arrow-up {
+  background: url("../img/arrow-up.png") no-repeat;
+  width: 20px;
+  height: 11px;
+  position: absolute;
+  right: 20px;
+  top: -10px;
+}
+
+/*----*/
+/* line 699, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.notify-arrow {
+  border-style: solid;
+  border-width: 0 9px 9px;
+  height: 0;
+  margin-top: 0;
+  opacity: 0;
+  position: absolute;
+  left: 7px;
+  top: -18px;
+  transition: all 0.25s ease 0s;
+  width: 0;
+  z-index: 10;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+/* line 715, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.notify-arrow-yellow {
+  border-color: transparent transparent #FCB322;
+  border-bottom-color: #FCB322 !important;
+  border-top-color: #FCB322 !important;
+}
+
+/* line 720, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.notify-arrow-green {
+  border-color: transparent transparent #68dff0;
+  border-bottom-color: #68dff0 !important;
+  border-top-color: #68dff0 !important;
+}
+
+/*--sidebar toggle---*/
+/* line 730, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.sidebar-toggle-box {
+  float: left;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+/* line 736, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.sidebar-toggle-box .fa-bars {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* line 743, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.sidebar-closed > #sidebar > ul {
+  display: none;
+}
+
+/* line 747, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.sidebar-closed #main-content {
+  margin-left: 0px;
+}
+
+/* line 751, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.sidebar-closed #sidebar {
+  margin-left: -180px;
+}
+
+/* Dash Side */
+/* line 758, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds {
+  background: #ffffff;
+  padding-top: 20px;
+}
+
+/* line 763, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* line 768, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds h3 {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0 10px;
+  line-height: 60px;
+  height: 60px;
+  margin: 0;
+  background: #ff865c;
+  text-align: center;
+}
+
+/* line 779, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds i {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* line 784, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds .desc {
+  border-bottom: 1px solid #eaeaea;
+  display: inline-block;
+  padding: 15px 0;
+  width: 100%;
+}
+
+/* line 791, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds .desc:hover {
+  background: #f2f2f2;
+}
+
+/* line 795, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds .thumb {
+  width: 30px;
+  margin: 0 10px 0 20px;
+  display: block;
+  float: left;
+}
+
+/* line 802, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds .details {
+  width: 170px;
+  float: left;
+}
+
+/* line 807, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds > .desc p {
+  font-size: 11px;
+}
+
+/* line 811, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds p > muted {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #666666;
+}
+
+/* line 818, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ds a {
+  color: #68dff0;
+}
+
+/* LINE ICONS CONFIGURATION */
+/* line 824, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.mtbox {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+/* line 829, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box1 {
+  padding: 15px;
+  text-align: center;
+  color: #989898;
+  border-bottom: 1px solid #989898;
+}
+
+/* line 836, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box1 span {
+  font-size: 50px;
+}
+
+/* line 841, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box1 h3 {
+  text-align: center;
+}
+
+/* line 845, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box0:hover .box1 {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 849, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box0 p {
+  text-align: center;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+
+/* line 855, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box0:hover p {
+  color: #ff865c;
+}
+
+/* line 859, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.box0:hover {
+  background: #ffffff;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* MAIN CHART CONFIGURATION */
+/* line 865, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.main-chart {
+  padding-top: 20px;
+}
+
+/* line 872, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.border-head h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  color: #989898;
+}
+
+/* line 885, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.custom-bar-chart {
+  height: 290px;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+  border-bottom: 1px solid #c9cdd7;
+}
+
+/* line 893, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.custom-bar-chart .bar {
+  height: 100%;
+  position: relative;
+  width: 6%;
+  margin: 0px 4%;
+  float: left;
+  text-align: center;
+  z-index: 10;
+}
+
+/* line 903, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.custom-bar-chart .bar .title {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+}
+
+/* line 911, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.custom-bar-chart .bar .value {
+  position: absolute;
+  bottom: 0;
+  background: #ff865c;
+  color: #68dff0;
+  width: 100%;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 929, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.custom-bar-chart .bar .value:hover {
+  background: #2f2f2f;
+  color: #fff;
+}
+
+/* line 934, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.y-axis {
+  color: #555555;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  font-size: 11px;
+}
+
+/* line 942, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.y-axis li {
+  border-top: 1px dashed #dbdce0;
+  display: block;
+  height: 58px;
+  width: 100%;
+}
+
+/* line 949, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.y-axis li:last-child {
+  border-top: none;
+}
+
+/* line 953, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.y-axis li span {
+  display: block;
+  margin: -10px 0 0 -60px;
+  padding: 0 10px;
+  width: 40px;
+}
+
+/*Donut Chart Main Page Conf*/
+/* line 962, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.donut-main {
+  display: block;
+  text-align: center;
+}
+
+/* line 967, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.donut-main h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* *************************************************************************************
+PANELS CONFIGURATIONS
+*************************************************************************************** */
+/*Panel Size*/
+/* line 978, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.pn {
+  height: 250px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 983, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.pn:hover {
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+/*Grey Panel*/
+/* line 990, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.grey-panel {
+  text-align: center;
+  background: #dfdfe1;
+}
+
+/* line 994, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.grey-panel .grey-header {
+  background: #ccd1d9;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+/* line 999, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.grey-panel h5 {
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+/* line 1003, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.grey-panel p {
+  margin-left: 5px;
+}
+
+/* Specific Conf for Donut Charts*/
+/* line 1007, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.donut-chart p {
+  margin-top: 5px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+/* line 1012, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.donut-chart h2 {
+  font-weight: 900;
+  color: #FF6B6B;
+  font-size: 38px;
+}
+
+/* Dark Blue*/
+/* line 1020, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.darkblue-panel {
+  text-align: center;
+  background: #444c57;
+}
+
+/* line 1024, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.darkblue-panel .darkblue-header {
+  background: transparent;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+/* line 1029, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.darkblue-panel h1 {
+  color: #f2f2f2;
+}
+
+/* line 1032, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.darkblue-panel h5 {
+  font-weight: 200;
+  margin-top: 10px;
+  color: white;
+}
+
+/* line 1037, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.darkblue-panel footer {
+  color: white;
+}
+
+/* line 1040, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.darkblue-panel footer h5 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+/*Green Panel*/
+/* line 1047, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.green-panel {
+  text-align: center;
+  background: #68dff0;
+}
+
+/* line 1051, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.green-panel .green-header {
+  background: #43b1a9;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+/* line 1056, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.green-panel h5 {
+  color: white;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+/* line 1061, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.green-panel h3 {
+  color: white;
+  font-weight: 100;
+}
+
+/* line 1065, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.green-panel p {
+  color: white;
+}
+
+/*White Panel */
+/* line 1070, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.white-panel {
+  text-align: center;
+  background: #ffffff;
+  color: #ccd1d9;
+}
+
+/* line 1076, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.white-panel p {
+  margin-top: 5px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+/* line 1081, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.white-panel .white-header {
+  background: #f4f4f4;
+  padding: 3px;
+  margin-bottom: 15px;
+  color: #c6c6c6;
+}
+
+/* line 1087, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.white-panel .small {
+  font-size: 10px;
+  color: #ccd1d9;
+}
+
+/* line 1092, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.white-panel i {
+  color: #68dff0;
+  padding-right: 4px;
+  font-size: 14px;
+}
+
+/*STOCK CARD Panel*/
+/* line 1099, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.card {
+  background: white;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+  height: 250px;
+}
+
+/* line 1105, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .stock-chart {
+  background: #00c5de;
+}
+
+/* line 1108, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .stock-chart #chart {
+  height: 10.7em;
+  background: url(http://i.imgbox.com/abmuNQx2) center bottom no-repeat;
+}
+
+/* line 1112, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .current-price {
+  background: #1d2122;
+  padding: 10px;
+}
+
+/* line 1116, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .current-price .info abbr {
+  display: block;
+  color: #f8f8f8;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 0.18em;
+}
+
+/* line 1123, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .current-price .changes {
+  text-align: right;
+}
+
+/* line 1126, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .changes .up {
+  color: #4fd98b;
+}
+
+/* line 1129, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .current-price .changes .value {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+/* line 1133, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .summary {
+  color: #2f2f2f;
+  display: block;
+  background: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 1140, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.stock .summary strong {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/*Content Panel*/
+/* line 1146, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.content-panel {
+  background: #ffffff;
+  box-shadow: 0px 3px 2px #aab2bd;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+/* line 1152, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.content-panel h4 {
+  margin-left: 10px;
+}
+
+/*WEATHER PANELS*/
+/* Weather 1 */
+/* line 1159, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather {
+  background: url(../img/weather.jpg) no-repeat center top;
+  text-align: center;
+  background-position: center center;
+}
+
+/* line 1164, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather i {
+  color: white;
+  margin-top: 45px;
+}
+
+/* line 1168, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather h2 {
+  color: white;
+  font-weight: 900;
+}
+
+/* line 1172, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather h4 {
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Weather 2 */
+/* line 1179, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 {
+  background: #e9f0f4;
+}
+
+/* line 1182, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 .weather-2-header {
+  background: #54bae6;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 1187, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 .weather-2-header p {
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 1192, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 .weather-2-header p small {
+  font-size: 10px;
+}
+
+/* line 1195, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 .data {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #272b34;
+}
+
+/* line 1200, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 .data h5 {
+  margin-top: 0px;
+  font-weight: lighter;
+}
+
+/* line 1204, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-2 .data h1 {
+  margin-top: 2px;
+}
+
+/* Weather 3 */
+/* line 1209, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 {
+  background: #ffcf00;
+}
+
+/* line 1213, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 i {
+  color: white;
+  margin-top: 30px;
+  font-size: 70px;
+}
+
+/* line 1218, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 h1 {
+  margin-top: 10px;
+  color: white;
+  font-weight: 900;
+}
+
+/* line 1223, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 .info {
+  background: #f2f2f2;
+}
+
+/* line 1226, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 .info i {
+  font-size: 15px;
+  color: #c2c2c2;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+/* line 1232, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 .info h3 {
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+/* line 1236, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.weather-3 .info p {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  color: #c2c2c2;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/*Twitter Panel*/
+/* line 1247, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.twitter-panel {
+  background: #4fc1e9;
+  text-align: center;
+}
+
+/* line 1251, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.twitter-panel i {
+  color: white;
+  margin-top: 40px;
+}
+
+/* line 1255, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.twitter-panel p {
+  color: #f5f5f5;
+  margin: 10px;
+}
+
+/* line 1259, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.twitter-panel .user {
+  color: white;
+  font-weight: 900;
+}
+
+/* Instagram Panel*/
+/* line 1266, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.instagram-panel {
+  background: url(../img/instagram.jpg) no-repeat center top;
+  text-align: center;
+  background-position: center center;
+}
+
+/* line 1271, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.instagram-panel i {
+  color: white;
+  margin-top: 35px;
+}
+
+/* line 1275, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.instagram-panel p {
+  margin: 5px;
+  color: white;
+}
+
+/* Product Panel */
+/* line 1281, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.product-panel {
+  background: #dadad2;
+  text-align: center;
+  padding-top: 50px;
+  height: 100%;
+}
+
+/* Product Panel 2*/
+/* line 1289, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.product-panel-2 {
+  background: #dadad2;
+  text-align: center;
+}
+
+/* line 1293, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.product-panel-2 .badge {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+/* line 1298, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge-hot {
+  background: #ed5565;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  border-radius: 100%;
+}
+
+/* Soptify Panel */
+/* line 1310, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#spotify {
+  background: url(../img/lorde.jpg) no-repeat center top;
+  margin-top: -15px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 220px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 1326, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#spotify .btn-clear-g {
+  top: 15%;
+  right: 10px;
+  position: absolute;
+  margin-top: 5px;
+}
+
+/* line 1332, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#spotify .sp-title {
+  bottom: 15%;
+  left: 25px;
+  position: absolute;
+  color: #efefef;
+}
+
+/* line 1338, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#spotify .sp-title h3 {
+  font-weight: 900;
+}
+
+/* line 1341, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#spotify .play {
+  bottom: 18%;
+  right: 25px;
+  position: absolute;
+  color: #efefef;
+  font-size: 20px;
+}
+
+/* line 1348, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.followers {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* BLOG PANEL */
+/* line 1354, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#blog-bg {
+  background: url(../img/blog-bg.jpg) no-repeat center top;
+  margin-top: -15px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 150px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 1370, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#blog-bg .badge {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+/* line 1375, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge-popular {
+  background: #3498db;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  border-radius: 100%;
+}
+
+/* line 1385, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.blog-title {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 100px;
+  padding: 6px;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  display: block;
+  width: 120px;
+}
+
+/* line 1395, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.blog-text {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* Calendar Configuration */
+/* line 1403, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#calendar {
+  color: white;
+  padding: 0px !important;
+}
+
+/* line 1407, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.calendar-month-header {
+  background: #43b1a9;
+}
+
+/* TODO PANEL */
+/* line 1412, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps {
+  display: block;
+}
+
+/* line 1415, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps input[type=checkbox] {
+  display: none;
+}
+
+/* line 1418, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps input[type=submit] {
+  background: #f1783c;
+  border: none;
+  padding: 0px;
+  margin: 0 auto;
+  width: 100%;
+  height: 55px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+/* line 1433, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps input[type=submit]:hover {
+  background: #8fde9c;
+}
+
+/* line 1436, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps label {
+  background: #393D40;
+  height: 65px;
+  line-height: 65px;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #44494e;
+  color: #889199;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 52px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  margin: 0px;
+}
+
+/* line 1453, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps label:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  margin: 26px 0px 0px 18px;
+  border-radius: 100%;
+  transition: border 0.7s ease;
+}
+
+/* line 1463, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps label:hover {
+  background: #2B2E30;
+  color: #46b7e5;
+}
+
+/* line 1467, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.steps label:hover:before {
+  border: 1px solid #46b7e5;
+}
+
+/* line 1472, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#op1:checked ~ label[for=op1]:before,
+#op2:checked ~ label[for=op2]:before,
+#op3:checked ~ label[for=op3]:before {
+  border: 2px solid #96c93c;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNpinHLMhgEHKADia0xQThIQs6JJ9gPxZhYQAcS6QHwDiI8hSYJAC0gBPxDLAvFcIJ6JJJkDxFNBVtgBcQ8Qa6BLghgwN4A4a9ElQYAFSj8C4mwg3o8sCQIAAQYA78QTYqnPZuEAAAAASUVORK5CYII=") no-repeat center center;
+}
+
+/* PROFILE PANELS */
+/* Profile 01*/
+/* line 1479, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#profile-01 {
+  background: url(../img/profile-01.jpg) no-repeat center top;
+  margin-top: -15px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 150px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 1495, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#profile-01 h3 {
+  color: white;
+  padding-top: 50px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* line 1501, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#profile-01 h6 {
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+
+/* line 1507, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.profile-01 {
+  background: #68dff0;
+  height: 50px;
+}
+
+/* line 1511, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.profile-01:hover {
+  background: #2f2f2f;
+  -webkit-transition: background-color 0.6s;
+  -moz-transition: background-color 0.6s;
+  -o-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+  cursor: pointer;
+}
+
+/* line 1519, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.profile-01 p {
+  color: white;
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* Profile 02*/
+/* line 1527, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#profile-02 {
+  background: url(../img/profile-02.jpg) no-repeat center top;
+  margin-top: -15px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 200px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 1543, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#profile-02 .user {
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* line 1547, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#profile-02 h4 {
+  color: white;
+  margin: 0px;
+  padding-top: 8px;
+}
+
+/* line 1552, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.pr2-social a {
+  color: #cdcdcd;
+}
+
+/* line 1555, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.pr2-social a:hover {
+  color: #68dff0;
+}
+
+/* line 1558, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.pr2-social i {
+  margin-top: 15px;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+/*spark line*/
+/* line 1566, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 1571, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart .heading {
+  text-align: left;
+}
+
+/* line 1574, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart .heading span {
+  display: block;
+}
+
+/* line 1577, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.green-chart .chart-tittle {
+  font-size: 16px;
+  padding: 15px;
+  display: inline-block;
+  font-weight: normal;
+  background: #99c262;
+  width: 100%;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* line 1587, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#barchart {
+  margin-bottom: -15px;
+  display: inline-block;
+}
+
+/* line 1591, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.green-chart .chart-tittle .value {
+  float: right;
+  color: #c0f080;
+}
+
+/* line 1595, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.green-chart {
+  background: #a9d96c;
+  color: #fff;
+}
+
+/* line 1599, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.terques-chart {
+  background: transparent;
+  color: #797979;
+}
+
+/* line 1603, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.terques-chart .chart-tittle .value {
+  float: right;
+  color: #fff;
+}
+
+/* line 1607, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.terques-chart .chart-tittle .value a {
+  color: #2f2f2f;
+  font-size: 12px;
+}
+
+/* line 1611, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.terques-chart .chart-tittle .value a:hover, .panel.terques-chart .chart-tittle .value a.active {
+  color: #68dff0;
+  font-size: 12px;
+}
+
+/* line 1615, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel.terques-chart .chart-tittle {
+  font-size: 16px;
+  padding: 15px;
+  display: inline-block;
+  font-weight: normal;
+  background: #39b7ac;
+  width: 100%;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* line 1625, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* showcase background */
+/* line 1630, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.showback {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 2px #aab2bd;
+}
+
+/* Calendar Events - Calendar.html*/
+/* line 1640, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.external-event {
+  cursor: move;
+  display: inline-block !important;
+  margin-bottom: 7px !important;
+  margin-right: 7px !important;
+  padding: 10px;
+}
+
+/* line 1648, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.drop-after {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+/* line 1654, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.fc-state-default, .fc-state-default .fc-button-inner {
+  background: #f2f2f2;
+}
+
+/* line 1658, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.fc-state-active .fc-button-inner {
+  background: #FFFFFF;
+}
+
+/* Gallery Configuration */
+/* line 1663, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.photo-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: #68dff0;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+/* line 1673, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.project .overlay {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+/* line 1686, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.project:hover .photo-wrapper {
+  background-color: #68dff0;
+  background-image: url(../img/zoom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+/* line 1697, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.project:hover .photo {
+  opacity: 10;
+  filter: alpha(opacity=4000);
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+}
+
+/* line 1703, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.project:hover .overlay {
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* EZ Checklist */
+/* line 1713, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ez-checkbox {
+  margin-right: 5px;
+}
+
+/* line 1717, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ez-checkbox, .ez-radio {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 1722, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.brand-highlight {
+  background: #fffbcc !important;
+}
+
+/* FORMS CONFIGURATION */
+/* line 1728, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.form-panel {
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 3px 2px #aab2bd;
+  text-align: left;
+}
+
+/* line 1736, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+label {
+  font-weight: 400;
+}
+
+/* line 1740, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.form-horizontal.style-form .form-group {
+  border-bottom: 1px solid #eff2f7;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 1746, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.round-form {
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+}
+
+@media (min-width: 768px) {
+  /* line 1752, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+  .form-horizontal .control-label {
+    text-align: left;
+  }
+}
+/* line 1757, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#focusedInput {
+  border: 1px solid #ed5565;
+  box-shadow: none;
+}
+
+/* line 1762, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.add-on {
+  float: right;
+  margin-top: -37px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* line 1769, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.add-on .btn {
+  height: 34px;
+}
+
+/* TOGGLE CONFIGURATION */
+/* line 1774, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.231;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 80px;
+  -webkit-mask: url("../img/mask.png") 0 0 no-repeat;
+  mask: url("../img/mask.png") 0 0 no-repeat;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 1792, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch.deactivate {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default !important;
+}
+
+/* line 1798, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch.deactivate label,
+.has-switch.deactivate span {
+  cursor: default !important;
+}
+
+/* line 1801, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch > div {
+  width: 162%;
+  position: relative;
+  top: 0;
+}
+
+/* line 1806, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch > div.switch-animate {
+  -webkit-transition: left 0.25s ease-out;
+  -moz-transition: left 0.25s ease-out;
+  -o-transition: left 0.25s ease-out;
+  transition: left 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 1813, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch > div.switch-off {
+  left: -63%;
+}
+
+/* line 1816, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch > div.switch-off label {
+  background-color: #7f8c9a;
+  border-color: #bdc3c7;
+  -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5);
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 1823, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch > div.switch-on {
+  left: 0%;
+}
+
+/* line 1826, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch > div.switch-on label {
+  background-color: #41cac0;
+}
+
+/* line 1829, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch input[type=checkbox] {
+  display: none;
+}
+
+/* line 1832, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch span {
+  cursor: pointer;
+  font-size: 14.994px;
+  font-weight: 700;
+  float: left;
+  height: 29px;
+  line-height: 19px;
+  margin: 0;
+  padding-bottom: 6px;
+  padding-top: 5px;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 1855, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch span.switch-left {
+  border-radius: 30px 0 0 30px;
+  background-color: #2A3542;
+  color: #41cac0;
+  border-left: 1px solid transparent;
+}
+
+/* line 1861, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch span.switch-right {
+  border-radius: 0 30px 30px 0;
+  background-color: #bdc3c7;
+  color: #ffffff;
+  text-indent: 7px;
+}
+
+/* line 1867, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch span.switch-right [class*="fui-"] {
+  text-indent: 0;
+}
+
+/* line 1870, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.has-switch label {
+  border: 4px solid #2A3542;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  float: left;
+  height: 29px;
+  margin: 0 -21px 0 -14px;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+  width: 29px;
+  z-index: 100;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 1888, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -webkit-mask: url("../img/mask.png") 0 0 no-repeat;
+  mask: url("../img/mask.png") 0 0 no-repeat;
+}
+
+/* line 1894, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square > div.switch-off label {
+  border-color: #7f8c9a;
+  border-radius: 6px 0 0 6px;
+}
+
+/* line 1898, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square span.switch-left {
+  border-radius: 6px 0 0 6px;
+}
+
+/* line 1901, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square span.switch-left [class*="fui-"] {
+  text-indent: -10px;
+}
+
+/* line 1904, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square span.switch-right {
+  border-radius: 0 6px 6px 0;
+}
+
+/* line 1907, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square span.switch-right [class*="fui-"] {
+  text-indent: 5px;
+}
+
+/* line 1910, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.switch-square label {
+  border-radius: 0 6px 6px 0;
+  border-color: #41cac0;
+}
+
+/*LOGIN CONFIGURATION PAGE*/
+/* line 1918, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.form-login {
+  max-width: 330px;
+  margin: 100px auto 0;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 1926, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.form-login h2.form-login-heading {
+  margin: 0;
+  padding: 25px 20px;
+  text-align: center;
+  background: #68dff0;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* line 1938, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.login-wrap {
+  padding: 20px;
+}
+
+/* line 1941, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.login-wrap .registration {
+  text-align: center;
+}
+
+/* line 1944, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.login-social-link {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/*LOCK SCREEN CONF*/
+/* line 1952, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#showtime {
+  width: 100%;
+  color: #fff;
+  font-size: 90px;
+  margin-bottom: 30px;
+  margin-top: 250px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* line 1963, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.lock-screen {
+  text-align: center;
+}
+
+/* line 1967, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.lock-screen a {
+  color: white;
+}
+
+/* line 1971, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.lock-screen a:hover {
+  color: #48cfad;
+}
+
+/* line 1975, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.lock-screen i {
+  font-size: 60px;
+}
+
+/* line 1979, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.lock-screen .modal-content {
+  position: relative;
+  background-color: #f2f2f2;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* line 1989, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-facebook {
+  color: #fff;
+  background-color: #5193ea;
+  border-color: #2775e2;
+}
+
+/* line 1998, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.open .dropdown-toggle.btn-facebook {
+  color: #fff;
+  background-color: #2775e2;
+  border-color: #2775e2;
+}
+
+/* line 2004, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-twitter {
+  color: #fff;
+  background-color: #44ccfe;
+  border-color: #2bb4e8;
+}
+
+/* line 2013, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active,
+.btn-twitter.active,
+.open .dropdown-toggle.btn-twitter {
+  color: #fff;
+  background-color: #2bb4e8;
+  border-color: #2bb4e8;
+}
+
+/*badge*/
+/* line 2021, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge.bg-primary {
+  background: #8075c4;
+}
+
+/* line 2025, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge.bg-success {
+  background: #a9d86e;
+}
+
+/* line 2029, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge.bg-warning {
+  background: #FCB322;
+}
+
+/* line 2033, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge.bg-important {
+  background: #ff6c60;
+}
+
+/* line 2037, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge.bg-info {
+  background: #41cac0;
+}
+
+/* line 2041, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.badge.bg-inverse {
+  background: #2A3542;
+}
+
+/*easy pie chart*/
+/* line 2047, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.easy-pie-chart {
+  display: inline-block;
+  padding: 30px 0;
+}
+
+/* line 2052, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart-info, .chart-info .increase, .chart-info .decrease {
+  display: inline-block;
+}
+
+/* line 2056, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart-info {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* line 2061, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart-position {
+  margin-top: 70px;
+}
+
+/* line 2065, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart-info span {
+  margin: 0 3px;
+}
+
+/* line 2069, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart-info .increase {
+  background: #ff6c60;
+  width: 10px;
+  height: 10px;
+}
+
+/* line 2075, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.chart-info .decrease {
+  background: #f2f2f2;
+  width: 10px;
+  height: 10px;
+}
+
+/* line 2081, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot {
+  background-color: #e6e7ec;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+  border: none;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Safari and Chrome */
+  /* line 2093, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+  .panel-footer.revenue-foot {
+    margin-bottom: -4px;
+  }
+}
+/* line 2099, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: inline-flex;
+}
+
+/* line 2106, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li {
+  float: left;
+  width: 33.33%;
+}
+
+/* line 2111, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li.first a:hover, .panel-footer.revenue-foot ul li.first a {
+  -webkit-border-radius: 0px 0px 0px 4px;
+  border-radius: 0px 0px 0px 4px;
+}
+
+/* line 2116, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li.last a:hover, .panel-footer.revenue-foot ul li.last a {
+  -webkit-border-radius: 0px 0px 4px 0px;
+  border-radius: 0px 0px 4px 0px;
+  border-right: none;
+}
+
+/* line 2123, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 15px;
+  text-align: center;
+  border-right: 1px solid #d5d8df;
+  color: #797979;
+}
+
+/* line 2132, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li a:hover, .panel-footer.revenue-foot ul li.active a {
+  background: #fff;
+  position: relative;
+}
+
+/* line 2137, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li a i {
+  color: #c6cad5;
+  display: block;
+  font-size: 16px;
+}
+
+/* line 2142, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.panel-footer.revenue-foot ul li a:hover i, .panel-footer.revenue-foot ul li.active a i {
+  color: #ff6c60;
+  display: block;
+  font-size: 16px;
+}
+
+/*flot chart*/
+/* line 2150, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.flot-chart .chart, .flot-chart .pie, .flot-chart .bars {
+  height: 300px;
+}
+
+/*todolist*/
+/* line 2155, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sortable {
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 2161, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sortable li {
+  padding-left: 3em;
+  font-size: 12px;
+}
+
+/* line 2165, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sortable li i {
+  position: absolute;
+  left: 6px;
+  padding: 4px 10px 0 10px;
+  cursor: pointer;
+}
+
+/* line 2172, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+#sortable li input[type=checkbox] {
+  margin-top: 0;
+}
+
+/* line 2176, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable > li {
+  padding: 15px 0 15px 35px !important;
+  position: relative;
+  background: #f5f6f8;
+  margin-bottom: 2px;
+  border-bottom: none !important;
+}
+
+/* line 2184, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable li.list-primary {
+  border-left: 3px solid #41CAC0;
+}
+
+/* line 2188, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable li.list-success {
+  border-left: 3px solid #78CD51;
+}
+
+/* line 2192, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable li.list-danger {
+  border-left: 3px solid #FF6C60;
+}
+
+/* line 2196, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable li.list-warning {
+  border-left: 3px solid #F1C500;
+}
+
+/* line 2200, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable li.list-info {
+  border-left: 3px solid #58C9F3;
+}
+
+/* line 2204, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.ui-sortable li.list-inverse {
+  border-left: 3px solid #BEC3C7;
+}
+
+/*footer*/
+/* line 2209, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.site-footer {
+  background: #68dff0;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* line 2216, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.go-top {
+  margin-right: 1%;
+  float: right;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* line 2226, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.go-top i {
+  color: #2A3542;
+}
+
+/* line 2230, /Users/kristiankyvik/mlh/messageboard/app/assets/stylesheets/general.css.scss */
+.site-min-height {
+  min-height: 900px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */

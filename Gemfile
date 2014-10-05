@@ -28,7 +28,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'simple_form'
 gem 'pusher'
-
+gem 'pry'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
