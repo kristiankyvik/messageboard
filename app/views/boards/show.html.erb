@@ -1159,7 +1159,7 @@
   var pusher = new Pusher('552cc50436c157cf8d4c');
   var channel = pusher.subscribe('the_channel');
   channel.bind('new_question', function(data) {
-    WordCloud(document.getElementById('myCanvas'), { list: data.message, gridSize: 3, weightFactor: 2, shuffle: false, color: "white", maxSize: 15, rotateRatio: 0, backgroundColor: "black", fontFamily: "Indie Flower"} );
+    WordCloud(document.getElementById('myCanvas'), { list: data.message, gridSize: 3, weightFactor: 1, shuffle: false, color: "white", maxSize: 15, rotateRatio: 0, backgroundColor: "black", fontFamily: "Indie Flower"} );
   });
 
 </script>
