@@ -1401,7 +1401,7 @@
     WordCloud(document.getElementById('myCanvas'), { list: data.message, gridSize: 3, weightFactor: 2, shuffle: false, color: "white", maxSize: 15, rotateRatio: 0, backgroundColor: "black", fontFamily: "Indie Flower"} );
 
 
-    if data.isQuestion{
+    if (data.isQuestion == true) {
       var myNotification = new Notify("New Question", {
           body: data.text
       });
