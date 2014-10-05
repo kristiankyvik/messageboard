@@ -2,7 +2,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
   <!-- Optional theme -->
@@ -31,41 +31,40 @@
 
 
     <div class = zero
-    
 
-    
+
+
 
     <div class="row">
         <div class="col-md col-md-offset-5">
-       
+
     <% if @list != [] && @list != nil %>
-      <% @list.sort_by {|x| x.ranking}  %>
       <% @list.each do |message| %>
 <!--         <div class = zero
           <div class="wrapper" id = "box">
             <div class="alert alert-info" role="alert"  > -->
 
                 <% rowRank = "rank" + message.id.to_s %>
-                <button class="btn btn-lg button btn-default" style = "display: inline;"> 
+                <button class="btn btn-lg button btn-default" style = "display: inline;">
                   <%= message.content %> - <span id = <%= rowRank  %>> <%= message.ranking %> </span>
                 </button>
 
                 <% idUp = message.id.to_s %>
                 <% idDown = message.id.to_s %>
 
-                  <button id= <%=idUp %>  class="button btn-success voteButton up" style="  
+                  <button id= <%=idUp %>  class="button btn-success voteButton up" style="
                    margin-top = 5%; display: inline; height: 40px; width: 40px"><span class= "glyphicon glyphicon-thumbs-up"></button>
-                  <button id= <%=idDown %>  class="button btn-danger voteButton down" style=" display: inline; height: 40px; width: 40px" ><span class= "glyphicon glyphicon-thumbs-down  "></button>             
+                  <button id= <%=idDown %>  class="button btn-danger voteButton down" style=" display: inline; height: 40px; width: 40px" ><span class= "glyphicon glyphicon-thumbs-down  "></button>
            <br>
 <!--             </div>
          </div>
       </div> -->
-      
+
       <% end %>
     <% end %>
 
 </section>
-  
+
 </section>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -126,7 +125,7 @@
            var data = {target_id: target_id};
            ajaxDown(data);
            location.reload();
-           
+
        });
 
 
@@ -155,7 +154,7 @@
   $(document).ready(ready);
   $(document).on('page:load', ready);
 
-   
+
   </script>
 
 <% content_for :head do %>
@@ -163,5 +162,3 @@
     <%= render :partial => "shared/style_questions" %>
   </style>
 <% end %>
-
-
