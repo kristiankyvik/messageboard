@@ -1,5 +1,6 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -27,21 +28,38 @@
       </form>
 
     </div> <!-- /container -->
+
+
+    <div class = zero
+    
+
+    
+
     <div class="row">
         <div class="col-md col-md-offset-5">
+       
     <% if @list != [] && @list != nil %>
       <% @list.each do |message| %>
-        <% rowRank = "rank" + message.id.to_s %>
-        <button class="btn btn-lg btn-default" style = "display: inline;"> 
-          <%= message.content %> - <span id = <%= rowRank  %>> <%= message.ranking %> </span>
-        </button>
+<!--         <div class = zero
+          <div class="wrapper" id = "box">
+            <div class="alert alert-info" role="alert"  > -->
 
-        <% idUp = message.id.to_s %>
-        <% idDown = message.id.to_s %>
+                <% rowRank = "rank" + message.id.to_s %>
+                <button class="btn btn-lg button btn-default" style = "display: inline;"> 
+                  <%= message.content %> - <span id = <%= rowRank  %>> <%= message.ranking %> </span>
+                </button>
 
-          <button id= <%=idUp %>  class="btn btn-lg btn-success voteButton up" style="display: inline;"><span class= "glyphicon glyphicon-thumbs-up"></button>
-          <button id= <%=idDown %>  class="btn btn-lg btn-danger voteButton down" style=" display: inline;" ><span class= "glyphicon glyphicon-thumbs-down  "></button>             
+                <% idUp = message.id.to_s %>
+                <% idDown = message.id.to_s %>
+
+                  <button id= <%=idUp %>  class="button btn-success voteButton up" style="  
+                   margin-top = 5%; display: inline; height: 40px; width: 40px"><span class= "glyphicon glyphicon-thumbs-up"></button>
+                  <button id= <%=idDown %>  class="button btn-danger voteButton down" style=" display: inline; height: 40px; width: 40px" ><span class= "glyphicon glyphicon-thumbs-down  "></button>             
            <br>
+<!--             </div>
+         </div>
+      </div> -->
+      
       <% end %>
     <% end %>
 
