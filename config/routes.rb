@@ -4,7 +4,9 @@ Rails.application.routes.draw do
     collection do
       get :sign_in
       post :getQuestion
-      # post :voteQuestion
+      post :upvoteQuestion
+      post :downvoteQuestion
+
     end
   end
   resources :users do

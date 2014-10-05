@@ -2,6 +2,7 @@
 class ClientsController < ApplicationController
   def index
     @list = Board.find(1).messages
+    render :index, :layout => false
   end
 
 
@@ -15,22 +16,36 @@ class ClientsController < ApplicationController
     Pusher['the_channel'].trigger('new_question', {
           message: list
         })
+    @list = board.messages
+
     render :nothing => true
   end
 
-  # def voteQuestion
-  #   target_id = params[:target_id]
-  #   list = Board.find(1).messages
-  #   ranking = list.find(target_id).ranking
-  #   ranking += 1 
-  #   ranking.save!
-  #   list = list.map { |n| [n.content, n.ranking] }
-  #   Pusher['the_channel'].trigger('new_question', {
-  #         message: list
-  #       })
-  #   @list = board.messages
 
-  #   render :nothing => true
-  # end
+  def upvoteQuestion
+    target_id = params[:target_id]
+    @list = Board.find(1).messages
+    message = @list.find(target_id)
+    message.ranking += 1
+    message.save!
+    @list = @list.map { |n| [n.content, n.ranking] }
+    Pusher['the_channel'].trigger('new_question', {
+          message: @list
+        })
+    redirect_to( action: 'index', controller: 'clients')
+  end
+
+  def downvoteQuestion
+    target_id = params[:target_id]
+    @list = Board.find(1).messages
+    message = @list.find(target_id)
+    message.ranking -= 1
+    message.save!
+    @list = @list.map { |n| [n.content, n.ranking] }
+    Pusher['the_channel'].trigger('new_question', {
+          message: @list
+        })
+    redirect_to( action: 'index', controller: 'clients')
+  end
 
 end

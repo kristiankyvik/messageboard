@@ -1,4 +1,16 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <%= csrf_meta_tags %>
+</head>
 <section id="main-content">
   <section class="wrapper">
 
@@ -15,13 +27,19 @@
       </form>
 
     </div> <!-- /container -->
+    <div class="row">
+        <div class="col-md col-md-offset-5">
     <% if @list != [] && @list != nil %>
       <% @list.each do |message| %>
-        <div class="row" >
-          <%= message.content %> -  <%= message.ranking %> <button id= <%= message.id %> class="btn btn-primary btn-block voteButton" style="display: inline;"> voteUP! </button>
-        </div>
+        <% id_collapsable = message.id.to_s %>
+        <% rank = "rank" + message.id.to_s %>
+        <button class="btn btn-lg btn-default" style = "display: inline;"; data-toggle="collapse" data-target= <%= id_collapsable %> > <%= message.content %>  - <span id= <%= rank %>> <%= message.ranking %> </span> </button>
+          <button id= <%= message.id %>  class="btn btn-lg btn-success voteButton up" style="display: inline;"><span class= "glyphicon glyphicon-thumbs-up"></button>
+          <button id= <%= message.id %>  class="btn btn-lg btn-danger voteButton down" style=" display: inline;" ><span class= "glyphicon glyphicon-thumbs-down  "></button>             
+           <br>
       <% end %>
     <% end %>
+
 </section>
   
 </section>
@@ -29,11 +47,13 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
   <script type="text/javascript">
+
     $.ajaxSetup({
       headers: {
         'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
       }
     });
+
     $("#submitButton").click(function(){
       var text = $('#question')[0].value
       var data = {question: text};
@@ -46,18 +66,46 @@
             });
  });
 
-    //    $(".voteButton").click(function(evt){
-    //     target_id = evt.target.id;
-    //     console.log(target_id);
-    //     var data = {target_id: target_id};
-    //     $.ajax({
-    //              url: "/clients/voteQuestion",
-    //              type: "post",
-    //              data: data,
-    //              dataType: "json"
+       $(".voteButton.up").click(function(evt){
+        target_id = evt.target.id;
+        console.log(target_id);
+        var row = "#rank" + target_id;
+        $(row)[0].innerHTML = parseInt($(row)[0].innerHTML, 10) + 1;
+        var data = {target_id: target_id};
+        setTimeout(ajaxUp(data), 4000);
+       });
 
-    //            });
-    // });
+       $(".voteButton.down").click(function(evt){
+        target_id = evt.target.id;
+        console.log(evt.target.id);
+        var row = "#rank" + target_id;
+        $(row)[0].innerHTML = parseInt($(row)[0].innerHTML, 10) - 1;
+        var data = {target_id: target_id};
+        setTimeout(ajaxDown(data), 4000);
+        
+    });
+
+
+    var ajaxDown = function(data){
+      $.ajax({
+               url: "/clients/downvoteQuestion",
+               type: "post",
+               data: data,
+               dataType: "json"
+             });
+    }
+
+    var ajaxUp = function(data){
+      $.ajax({
+               url: "/clients/upvoteQuestion",
+               type: "post",
+               data: data,
+               dataType: "json"
+             });
+    }
+
+
+
   </script>
 
 <% content_for :head do %>
