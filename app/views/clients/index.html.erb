@@ -39,6 +39,7 @@
         <div class="col-md col-md-offset-5">
        
     <% if @list != [] && @list != nil %>
+      <% @list.sort_by {|x| x.ranking}  %>
       <% @list.each do |message| %>
 <!--         <div class = zero
           <div class="wrapper" id = "box">
@@ -107,6 +108,7 @@
            $(row)[0].innerHTML = parseInt($(row)[0].innerHTML, 10) + 1;
            var data = {target_id: target_id};
            ajaxUp(data);
+           location.reload();
           });
 
 
@@ -123,6 +125,7 @@
            $(row)[0].innerHTML = parseInt($(row)[0].innerHTML, 10) - 1;
            var data = {target_id: target_id};
            ajaxDown(data);
+           location.reload();
            
        });
 

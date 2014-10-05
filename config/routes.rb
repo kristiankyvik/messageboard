@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :clients => "clients" }
   resources :clients do
     collection do
       get :sign_in

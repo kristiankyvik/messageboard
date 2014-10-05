@@ -35,8 +35,8 @@
 
 </div>
 
-  <canvas id= "myCanvas"></canvas>
-
+<!--   <canvas id= "myCanvas"></canvas>
+ -->
 
 <% content_for :head do %>
   <script type="text/javascript">
@@ -1400,20 +1400,23 @@
     console.log(data);
     WordCloud(document.getElementById('myCanvas'), { list: data.message, gridSize: 3, weightFactor: 2, shuffle: false, color: "white", maxSize: 15, rotateRatio: 0, backgroundColor: "black", fontFamily: "Indie Flower"} );
 
-    var myNotification = new Notify("New Question", {
-        body: data.message[data.message.length -1][0]
-    });
-    var enableNotifications = function()
-    {
-        if (Notify.isSupported && Notify.needsPermission)
-        {
-            Notify.requestPermission();
-        }
-        $("#NotificationActions").show();
+
+    if data.isQuestion{
+      var myNotification = new Notify("New Question", {
+          body: data.text
+      });
+      var enableNotifications = function()
+      {
+          if (Notify.isSupported && Notify.needsPermission)
+          {
+              Notify.requestPermission();
+          }
+          $("#NotificationActions").show();
+      }
+
+      myNotification.show();
     }
-
-    myNotification.show();
-
+    
 
   });
 

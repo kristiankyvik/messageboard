@@ -1,5 +1,6 @@
 
 class ClientsController < ApplicationController
+  skip_before_filter :require_no_authentication
   def index
     @list = Board.find(1).messages
     render :index, :layout => false
@@ -14,7 +15,9 @@ class ClientsController < ApplicationController
     list = board.messages
     list = list.map { |n| [n.content, n.ranking] }
     Pusher['the_channel'].trigger('new_question', {
-          message: list
+          message: list,
+          isQuestion: true,
+          text: text
         })
     @list = board.messages
 
@@ -30,7 +33,8 @@ class ClientsController < ApplicationController
     message.save!
     @list = @list.map { |n| [n.content, n.ranking] }
     Pusher['the_channel'].trigger('new_question', {
-          message: @list
+          message: @list,
+          isQuestion: false
         })
     redirect_to( action: 'index', controller: 'clients')
   end
@@ -43,7 +47,8 @@ class ClientsController < ApplicationController
     message.save!
     @list = @list.map { |n| [n.content, n.ranking] }
     Pusher['the_channel'].trigger('new_question', {
-          message: @list
+          message: @list,
+          isQuestion: false
         })
     redirect_to( action: 'index', controller: 'clients')
   end
